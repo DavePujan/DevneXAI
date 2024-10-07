@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ROCK PAPER SCISSORS</h1>
+        <div class="score">Score: <span id="score">0</span></div>
+    </header>
+    
+    <div class="game-container">
+        <div id="game-choices" class="choices">
+            <button class="choice" data-choice="rock">
+                <div class="circle blue">
+                    <img src="rock.png" alt="Rock">
+                </div>
+            </button>
+            <button class="choice" data-choice="paper">
+                <div class="circle yellow">
+                    <img src="paper.png" alt="Paper">
+                </div>
+            </button>
+            <button class="choice" data-choice="scissors">
+                <div class="circle red">
+                    <img src="scissors.png" alt="Scissors">
+                </div>
+            </button>
+        </div>
+        
+        <div id="result-display" class="result hidden">
+            <div class="picked">
+                <div>You picked</div>
+                <div id="your-choice" class="circle">
+                    <img src="" alt="Your choice">
+                </div>
+            </div>
+            <div class="picked">
+                <div>The house picked</div>
+                <div id="house-choice" class="circle">
+                    <img src="" alt="House choice">
+                </div>
+            </div>
+            <div id="result-text"></div>
+            <button id="play-again">PLAY AGAIN</button>
+        </div>
+    </div>
+    
+    <div class="buttons">
+        <a href="https://wrpsa.com/the-official-rules-of-rock-paper-scissors/" target="_blank"><button class="rules-button">RULES</button></a>
+        <button id="reset-score" class="reset-button">RESET SCORE</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

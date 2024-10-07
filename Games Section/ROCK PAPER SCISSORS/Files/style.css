@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #2f6bdb 0%, #000000 100%);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.score {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #fff;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.choices, .result {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.choice, .picked {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+}
+
+.circle img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.result {
+    flex-direction: column;
+    align-items: center;
+}
+
+.picked {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#your-choice {
+    margin-top: 5px;
+}
+
+#house-choice {
+    margin-left: 12px;
+    margin-top: 5px;
+}
+
+#result-text {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #00f;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.rules-button, .reset-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.rules-button:hover, .reset-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#play-again {
+    background-color: #00f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#play-again:hover {
+    background-color: #007bff;
+}
+
+@media (max-width: 600px) {
+    .circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    .circle img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .score {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #result-text {
+        font-size: 1.5em;
+    }
+
+    #your-choice {
+        margin-top: 5px;
+    }
+    
+    #house-choice {
+        margin-left: 25px;
+        margin-top: 5px;
+    }
+}
